@@ -37,7 +37,7 @@ while True:
         break
     try:
         weather_info(city)
-    except KeyError:
+    except KeyError:  # you can add other Errors to here
         print(f"Can't find {city} city.Please try again!!!")
     except Exception as d:
         print(d.__class__)
